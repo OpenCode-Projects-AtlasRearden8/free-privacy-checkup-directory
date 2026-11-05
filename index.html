@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freebie Directory: DIY Privacy Checkup — Asdale Dynamics, LLC</title>
+<meta name="description" content="Free tools and services for a do-it-yourself privacy checkup — explained like a friend would, no scraping, nothing creepy.">
+<style>:root { color-scheme: light; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; padding: 0 1rem 3rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55; color: #1f2430; background: #f7f6f2;
+}
+main { max-width: 52rem; margin: 0 auto; }
+header.hero {
+  padding: 2.5rem 1.5rem 1.5rem; text-align: center;
+}
+header.hero h1 { font-size: 1.9rem; margin: 0 0 .5rem; }
+header.hero p.tagline { font-size: 1.05rem; color: #4a5060; margin: 0 auto .5rem; max-width: 40rem; }
+header.hero p.finder { font-size: .9rem; color: #6a7180; margin: 0; }
+nav.toc {
+  display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center;
+  padding: 1rem 0 2rem;
+}
+nav.toc a {
+  background: #fff; border: 1px solid #ddd8cc; border-radius: 999px;
+  padding: .35rem .85rem; font-size: .9rem; text-decoration: none; color: #2451b3;
+}
+nav.toc a:hover { background: #eef2ff; }
+section { margin: 2rem 0; scroll-margin-top: 1rem; }
+section h3 { font-size: 1.3rem; margin: 0 0 .2rem; }
+section h3 .count { font-size: .85rem; color: #8a90a0; text-decoration: none; font-weight: normal; }
+section p.blurb { margin: 0 0 1rem; color: #4a5060; }
+article.entry {
+  background: #fff; border: 1px solid #e3ded2; border-radius: .8rem;
+  padding: 1rem 1.2rem; margin: 0 0 1rem;
+}
+article.entry h4 { margin: 0 0 .1rem; font-size: 1.08rem; }
+article.entry h4 a { color: #2451b3; text-decoration: none; }
+article.entry h4 a:hover { text-decoration: underline; }
+article.entry p.host {
+  margin: 0 0 .5rem; font-size: .82rem; color: #8a90a0;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+article.entry p.one-liner { margin: .3rem 0; }
+article.entry p.inspects { margin: .3rem 0; font-size: .95rem; color: #33384a; }
+article.entry p.note { margin: .35rem 0 0; font-size: .88rem; color: #6a5a2a; background: #fdf6df; border-radius: .4rem; padding: .35rem .6rem; display: inline-block; }
+article.entry code { background: #f0eee8; padding: .05rem .3rem; border-radius: .25rem; font-size: .9em; }
+section#cheat { background: #eef2ff; border: 1px solid #d6def5; border-radius: .8rem; padding: 1rem 1.5rem; }
+section#cheat ol { margin: .5rem 0 0; padding-left: 1.4rem; }
+footer { max-width: 52rem; margin: 3rem auto 0; text-align: center; font-size: .85rem; color: #8a90a0; }
+@media (prefers-color-scheme: dark) {
+  body { background: #171a21; color: #e8e6df; }
+  header.hero p.tagline, section p.blurb { color: #b7bcc9; }
+  header.hero p.finder, article.entry p.host, section h3 .count, footer { color: #8d93a3; }
+  article.entry, nav.toc a { background: #20242e; border-color: #343949; color: #e8e6df; }
+  article.entry h4 a, nav.toc a, article.entry h4 a { color: #9db6ff; }
+  nav.toc a:hover { background: #262c3c; }
+  article.entry code { background: #2a2f3c; }
+  article.entry p.note { color: #d8c68a; background: #2b2717; }
+  article.entry p.inspects { color: #cfd3de; }
+  section#cheat { background: #20242e; border-color: #343949; }
+}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <h1>Freebie Directory: DIY Privacy Checkup</h1>
+  <p class="tagline">Free tools and services for a do-it-yourself privacy checkup — explained like a friend would, no scraping, nothing creepy.</p>
+  <p class="finder">A friendly guide from Asdale Dynamics, LLC. Links verified live before this page was built. Nothing here needs an account for its core check unless noted.</p>
+</header>
+<nav class="toc" aria-label="Categories">
+<a href="#passwords">Password-strength checkers</a>
+<a href="#breaches">Have-I-Been-Pwned-style breach checkers</a>
+<a href="#aliasing">Email aliasing</a>
+<a href="#browser">Browser privacy tests</a>
+<a href="#dns">DNS resolvers (with honest privacy policies)</a>
+<a href="#router">Router checks</a>
+<a href="#phone">Phone-settings walkthroughs</a>
+</nav>
+<p>Free tools and services you can use right now, no scraping and no accounts required for the core checks, to give your digital life a friendly once-over. Each entry has a friend-style one-liner and a plain-English note on what the tool actually inspects.</p>
+<p><strong>How to use this directory:</strong> pick a section, do the check, and move on. Nothing here is a scanned-and-judged &quot;test&quot; you can fail — these are tools that show you your own data so you can decide what to tighten. Links were verified live before this directory was built; see <code>check_links.py</code> in this repo if you want to re-verify them yourself.</p>
+<p><strong>Not included on purpose:</strong> data-broker removal walkthroughs (see our separate guide), step-by-step password and two-factor setup (separate guide), and the link-safety-inspector CLI tool (separate tool). This directory is the <em>checkup</em>, not the <em>treatments</em>.</p>
+<section id="passwords">
+  <h3>Password-strength checkers <a class="count" title="3 entries">(3)</a></h3>
+  <p class="blurb">See how a password would hold up before you use it for real.</p>
+  <article class="entry" id="security-org-how-secure-is-my-password-how-secure-is-my-password-security-org">
+  <h4><a href="https://www.security.org/how-secure-is-my-password/" rel="noopener">How Secure Is My Password (Security.org)</a></h4>
+  <p class="host">security.org</p>
+  <p class="one-liner">Type a password, get a blunt-but-nice estimate of how long a cracker would need — in your browser tab, at zero cost, in about five seconds.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Length, character mix (upper/lower/digits/symbols), and dictionary/common-password patterns, then simulates brute-force crack time against typical offline attack speeds.</p>
+  
+</article>
+<article class="entry" id="bitwarden-com-password-strength-bitwarden-password-strength-testing-tool">
+  <h4><a href="https://bitwarden.com/password-strength/" rel="noopener">Bitwarden Password Strength Testing Tool</a></h4>
+  <p class="host">bitwarden.com</p>
+  <p class="one-liner">The same folks behind a popular password manager let you poke at a password with a real zxcvbn-style entropy score, no account needed.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Estimated entropy (guess attempts vs. offline-cracking scenarios) using common dictionary and keyboard-pattern matching — the modern &quot;cleverness&quot; scoring, not just &quot;how many symbols did you add.&quot;</p>
+  
+</article>
+<article class="entry" id="passwords-google-com-google-password-manager-s-password-checkup">
+  <h4><a href="https://passwords.google.com/" rel="noopener">Google Password Manager&#x27;s Password Checkup</a></h4>
+  <p class="host">passwords.google.com</p>
+  <p class="one-liner">If you&#x27;re signed into a Google account, this quietly cross-checks all your saved passwords at once — reuse, weakness, and known breaches.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Every password in your Google-saved list against reuse, length/strength heuristics, and a continuously updated list of leaked credentials (via a privacy-preserving hash comparison).</p>
+  <p class="note">Note: Requires a Google account sign-in (that&#x27;s the one in this section that does). There&#x27;s a similar built-in check in Chrome&#x27;s and Android&#x27;s settings.</p>
+</article>
+</section>
+<section id="breaches">
+  <h3>Have-I-Been-Pwned-style breach checkers <a class="count" title="2 entries">(2)</a></h3>
+  <p class="blurb">Find out which leaks your email has already been part of.</p>
+  <article class="entry" id="haveibeenpwned-com-have-i-been-pwned">
+  <h4><a href="https://haveibeenpwned.com/" rel="noopener">Have I Been Pwned</a></h4>
+  <p class="host">haveibeenpwned.com</p>
+  <p class="one-liner">The granddaddy of free breach checks — pop in your email and find out which data leaks have contained it over the last decade.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Your email address (not much else) against hundreds of publicly grouped corporate and organizational data-breach dumps, listing service names and dates of exposure.</p>
+  
+</article>
+<article class="entry" id="monitor-mozilla-org-mozilla-monitor">
+  <h4><a href="https://monitor.mozilla.org/" rel="noopener">Mozilla Monitor</a></h4>
+  <p class="host">monitor.mozilla.org</p>
+  <p class="one-liner">Firefox&#x27;s friendly take on the breach check — powered by the same leak databases, with ongoing monitoring if you&#x27;re willing to make a (free) account later.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Email address exposure in the same public breach datasets, but presented with clear, low-panic next-step advice for each one.</p>
+  <p class="note">Note: This site politely refuses bare automated requests on principle; open it in a browser and it works exactly as expected.</p>
+</article>
+</section>
+<section id="aliasing">
+  <h3>Email aliasing <a class="count" title="4 entries">(4)</a></h3>
+  <p class="blurb">Give every service a different address; turn off the noisy ones.</p>
+  <article class="entry" id="relay-firefox-com-mozilla-firefox-relay">
+  <h4><a href="https://relay.firefox.com/" rel="noopener">Mozilla Firefox Relay</a></h4>
+  <p class="host">relay.firefox.com</p>
+  <p class="one-liner">Generate throwaway-but-still-routable email addresses on demand so each service gets its own alias, and your real inbox stays the only one you actually check.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Nothing sneaky — it forwards mail from each alias to your real address and lets you switch an alias off if a service starts spamming; the paid tier adds a mask for phone numbers too.</p>
+  <p class="note">Note: Core aliasing has a free tier; sign-up creates a Mozilla account (free).</p>
+</article>
+<article class="entry" id="duckduckgo-com-email-duckduckgo-email-protection">
+  <h4><a href="https://duckduckgo.com/email/" rel="noopener">DuckDuckGo Email Protection</a></h4>
+  <p class="host">duckduckgo.com</p>
+  <p class="one-liner">A free <code>@duck.com</code> address that secretly strips trackers from every email it forwards — basically Relay and a tiny privacy shield in one.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Incoming mail only, and only to remove tracking pixels and tracking redirects; it doesn&#x27;t read or store your message contents beyond that.</p>
+  <p class="note">Note: Requires one free account setup, and the browser-extension route makes aliases a two-click affair while you&#x27;re signing up for things.</p>
+</article>
+<article class="entry" id="addy-io-addy-io">
+  <h4><a href="https://addy.io/" rel="noopener">addy.io</a></h4>
+  <p class="host">addy.io</p>
+  <p class="one-liner">A power-user-friendly alias maker with a very generous free tier — you can create a lot of aliases and even reply to them without revealing your real address.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> It doesn&#x27;t scan your mail; it simply forwards from a random-or-custom alias to your real inbox and lets you disable or delete aliases that start misbehaving.</p>
+  <p class="note">Note: Free tier covers the core aliasing; a free account is required to manage aliases.</p>
+</article>
+<article class="entry" id="simplelogin-io-simplelogin">
+  <h4><a href="https://simplelogin.io/" rel="noopener">SimpleLogin</a></h4>
+  <p class="host">simplelogin.io</p>
+  <p class="one-liner">The cleanest, most self-hostable aliasing service around — free tier included — with aliases, blur, and a searchable alias log.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Only what it must: which alias received mail and where to forward it (it logs delivery, not content). Proxies replies the same way so your real address never shows.</p>
+  <p class="note">Note: Free tier allows a small number of aliases; a free account is required.</p>
+</article>
+</section>
+<section id="browser">
+  <h3>Browser privacy tests <a class="count" title="5 entries">(5)</a></h3>
+  <p class="blurb">See how unique — and visible — your browser really is.</p>
+  <article class="entry" id="coveryourtracks-eff-org-eff-cover-your-tracks">
+  <h4><a href="https://coveryourtracks.eff.org/" rel="noopener">EFF Cover Your Tracks</a></h4>
+  <p class="host">coveryourtracks.eff.org</p>
+  <p class="one-liner">See for yourself how unique your browser&#x27;s fingerprint is — and whether your &quot;do not track&quot; setting is being politely ignored.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Canvas and WebGL fingerprinting, installed-font fingerprinting, HTTP-header traits, ad-blocker effectiveness, and whether Do Not Track signals are honored, then tells you how unique your combo is among its visitors.</p>
+  
+</article>
+<article class="entry" id="amiunique-org-amiunique">
+  <h4><a href="https://amiunique.org/" rel="noopener">AmIUnique</a></h4>
+  <p class="host">amiunique.org</p>
+  <p class="one-liner">A research-project-turned-tool from actual academics that shows which of your browser&#x27;s quirks make you practically one-of-a-kind online.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> A long list of readable browser traits (canvas, fonts, plugins, screen size, hardware hints) and compares your fingerprint against a large collected dataset to estimate your uniqueness.</p>
+  
+</article>
+<article class="entry" id="browserleaks-com-browserleaks">
+  <h4><a href="https://browserleaks.com/" rel="noopener">BrowserLeaks</a></h4>
+  <p class="host">browserleaks.com</p>
+  <p class="one-liner">A pixel-perfect rundown of every browser feature that can leak data — canvas, WebGL, IP, WebRTC, geolocation API, and more, each with its own mini-test.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> A wide battery of individual leak tests (canvas, WebGL, WebRTC, time zones, domains exposed to JavaScript, etc.) so you can spot exactly which single feature is the loud one after you tweak settings.</p>
+  
+</article>
+<article class="entry" id="dnsleaktest-com-dnsleaktest">
+  <h4><a href="https://www.dnsleaktest.com/" rel="noopener">DNSLeakTest</a></h4>
+  <p class="host">dnsleaktest.com</p>
+  <p class="one-liner">Changed your DNS but not sure it took? This check shows which DNS servers your requests are actually using — including your ISP&#x27;s if they&#x27;re sneaking in.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Generates randomized test hostnames and observes which recursive resolvers answer them, revealing your real resolver set (and whether your VPN&#x27;s DNS routing is honest).</p>
+  
+</article>
+<article class="entry" id="ipleak-net-ipleak">
+  <h4><a href="https://ipleak.net/" rel="noopener">IPLeak</a></h4>
+  <p class="host">ipleak.net</p>
+  <p class="one-liner">See your &quot;public self&quot; as the internet sees you: IP, DNS servers, WebRTC-exposed addresses, and rough geolocation, all on one friendly page.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Your apparent public IP as seen by the test&#x27;s servers, plus DNS resolution paths and browser-exposed WebRTC addresses that could betray your real IP even behind a VPN.</p>
+  
+</article>
+</section>
+<section id="dns">
+  <h3>DNS resolvers (with honest privacy policies) <a class="count" title="2 entries">(2)</a></h3>
+  <p class="blurb">Stop your ISP from keeping a diary of the sites you look up.</p>
+  <article class="entry" id="quad9-net-quad9">
+  <h4><a href="https://quad9.net/" rel="noopener">Quad9</a></h4>
+  <p class="host">quad9.net</p>
+  <p class="one-liner">A free, no-log DNS resolver (<code>9.9.9.9</code>) run by a not-for-profit that blocks known-malicious domains as a bonus — privacy and safety in one red herring-free box.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> (While resolving) — it matches requested domains against malware/phishing blocklists; queries are not stored in a way that can identify you personally, per its published policy.</p>
+  
+</article>
+<article class="entry" id="one-one-one-one-cloudflare-1-1-1-1">
+  <h4><a href="https://one.one.one.one/" rel="noopener">Cloudflare 1.1.1.1</a></h4>
+  <p class="host">one.one.one.one</p>
+  <p class="one-liner">Swap your ISP&#x27;s logging DNS for one that promises to log almost nothing and erase it fast — and it genuinely feels faster.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> (While resolving) — it processes every domain you look up; its policy says it discards identifying IP data quickly and sells nothing. Easy to set in seconds on most routers and phones.</p>
+  
+</article>
+</section>
+<section id="router">
+  <h3>Router checks <a class="count" title="3 entries">(3)</a></h3>
+  <p class="blurb">Check your front door from the outside, like a stranger would.</p>
+  <article class="entry" id="routersecurity-org-checklist-php-routersecurity-org-checkup-guide">
+  <h4><a href="https://routersecurity.org/checklist.php" rel="noopener">RouterSecurity.org Checkup Guide</a></h4>
+  <p class="host">routersecurity.org</p>
+  <p class="one-liner">A friendly, opinionated checklist that walks you through your router&#x27;s settings like a patient friend who happens to know way too much about routers.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Nothing automatically — it walks you through <em>manually inspecting</em> admin passwords, Wi-Fi encryption (WPA3/WPA2 not WEP), firmware versions, remote administration, and UPnP behavior.</p>
+  
+</article>
+<article class="entry" id="grc-com-shieldsup-grc-shieldsup">
+  <h4><a href="https://www.grc.com/shieldsup/" rel="noopener">GRC ShieldsUP!</a></h4>
+  <p class="host">grc.com</p>
+  <p class="one-liner">The internet&#x27;s longest-standing &quot;knock on your front door&quot; test — it probes your router&#x27;s exposed ports from the outside and reports which ones answered.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Whether your network&#x27;s common ports (and chosen ranges you pick) respond to unsolicited connections from the outside — the modern &quot;is my router silently exposing something?&quot; test.</p>
+  
+</article>
+<article class="entry" id="yougetsignal-com-tools-open-ports-yougetsignal-open-port-check">
+  <h4><a href="https://www.yougetsignal.com/tools/open-ports/" rel="noopener">YouGetSignal Open Port Check</a></h4>
+  <p class="host">yougetsignal.com</p>
+  <p class="one-liner">A dead-simple outside-in port tester: pick (or use) your IP, enter a port, and see whether anything on your network answered the door.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Whether a given TCP port on your public IP accepts connections, which is exactly how port-scanners and accidental ransomware find exposed devices.</p>
+  
+</article>
+</section>
+<section id="phone">
+  <h3>Phone-settings walkthroughs <a class="count" title="5 entries">(5)</a></h3>
+  <p class="blurb">Plain-English walkthroughs of the settings worth reviewing.</p>
+  <article class="entry" id="myaccount-google-com-security-checkup-google-security-checkup">
+  <h4><a href="https://myaccount.google.com/security-checkup" rel="noopener">Google Security Checkup</a></h4>
+  <p class="host">myaccount.google.com</p>
+  <p class="one-liner">Google&#x27;s own guided tour through your account&#x27;s security: signs you in, shows recent device logins, third-party app access, and two-step status.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Signed-in devices, recent security events, compromised-password hints, app passwords, and third-party apps granted scopes on your Google account — all on Android or any browser, free.</p>
+  
+</article>
+<article class="entry" id="myaccount-google-com-intro-privacycheckup-google-privacy-checkup">
+  <h4><a href="https://myaccount.google.com/intro/privacycheckup" rel="noopener">Google Privacy Checkup</a></h4>
+  <p class="host">myaccount.google.com</p>
+  <p class="one-liner">Ten-tips-in-one-screen: pulls up every &quot;is Google saving this?&quot; toggle (activity types, ad personalization, shared defaults) so you can flip each of them consciously.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> Your current activity-saving and ad-personalization settings across all Google services on one screen, with plain explanations of what each toggle really controls.</p>
+  
+</article>
+<article class="entry" id="support-apple-com-guide-personal-safety-welcome-web-apple-personal-safety-user-guide">
+  <h4><a href="https://support.apple.com/guide/personal-safety/welcome/web" rel="noopener">Apple Personal Safety User Guide</a></h4>
+  <p class="host">support.apple.com</p>
+  <p class="one-liner">Apple&#x27;s official step-by-step walkthrough of iPhone settings worth checking — safety-focused, calm, and written so a non-techie can follow every tap.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> It walks you through <em>manually reviewing</em> sharing of location (Find My), app privacy reports, air tag/Tracker Detect checks, house-cleaning of message/plan subscriptions, and account recovery — as a checklist, not a scan.</p>
+  
+</article>
+<article class="entry" id="apple-com-privacy-apple-privacy">
+  <h4><a href="https://www.apple.com/privacy/" rel="noopener">Apple Privacy</a></h4>
+  <p class="host">apple.com</p>
+  <p class="one-liner">Not a test, a compass — Apple&#x27;s plain-English summary of what its own devices collect, ideal as a companion while you poke around iPhone settings.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> (Nothing — it&#x27;s background reading.) Included because its app-tracking-transparency and privacy-feature summaries pair neatly with any phone-settings session.</p>
+  
+</article>
+<article class="entry" id="ncsc-gov-uk-cyberaware-home-ncsc-cyber-aware">
+  <h4><a href="https://www.ncsc.gov.uk/cyberaware/home" rel="noopener">NCSC Cyber Aware</a></h4>
+  <p class="host">ncsc.gov.uk</p>
+  <p class="one-liner">The UK&#x27;s cyber-security agency boiled personal security down to six actions — short, kind, and very doable on any phone.</p>
+  <p class="inspects"><strong>What it actually inspects:</strong> (Nothing — it&#x27;s a walkthrough.) Suggests manually reviewing passwords, screen-lock, two-step setup, software updates, and account recovery steps; no account or scan needed.</p>
+  
+</article>
+</section>
+<section id="cheat">
+  <h3>Two-minute cheat sheet</h3>
+  <p>No time for the whole page? This pass hits the highest-value checks:</p>
+  <ol>
+    <li>Run one password through a <a href="https://www.security.org/how-secure-is-my-password/">strength checker</a> (10 seconds).</li>
+    <li>Check one important email in <a href="https://haveibeenpwned.com/">Have I Been Pwned</a> (10 seconds).</li>
+    <li>Open <a href="https://coveryourtracks.eff.org/">EFF Cover Your Tracks</a> and just read the result (30 seconds).</li>
+    <li>Set your DNS to <a href="https://one.one.one.one/">1.1.1.1</a> or <a href="https://quad9.net/">9.9.9.9</a> (90 seconds).</li>
+  </ol>
+</section>
+</main>
+<footer>
+  24 free tools across 7 categories &middot;
+  Maintained by <strong>Asdale Dynamics, LLC</strong> &middot;
+  <a href="https://dylanasdale.github.io">dylanasdale.github.io</a> &middot; MIT License
+</footer>
+</body>
+</html>
